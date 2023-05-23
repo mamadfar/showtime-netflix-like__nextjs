@@ -6,7 +6,7 @@ const Movie = ({movie: {Poster, Year, imdbID, Type, Title}}: { movie: IMovieList
         <article className="flex h-52 text-white">
             <div className="relative h-full flex-1 mr-4">
                 <Link href={`/movie/${imdbID}`}>
-                    <MovieImage Title={Title} Poster={Poster} className={`object-contain ${Poster === "N/A" ? "px-2" : ""}`}/>
+                    <MovieImage Title={Title} Poster={Poster} ImgClassName={`object-contain ${Poster === "N/A" ? "px-2" : ""}`}/>
                 </Link>
             </div>
             <div className="flex-1 flex flex-col">
