@@ -34,14 +34,6 @@ In the [change-log.md](./change-log.md) you can find the all information about t
 on the file name, you will redirect to that file to see the structure of that file.
 
 ---
-## 🚢 Deploy with SSR mode
-If you want to use **Docker** to deploy on **SSR** mode on **VPS**, you can use this command:
-
-```shell
-docker-compose up
-```
-
----
 ### 🚩 NVM
 On Mac OS or Linux, you can use command below to install the exact node version which is used to create this app.
 ```shell

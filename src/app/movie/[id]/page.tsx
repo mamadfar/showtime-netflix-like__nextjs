@@ -3,7 +3,6 @@ import {getMovieService} from "@/services/getMoviesService";
 import {notFound} from "next/navigation";
 import {Loading, MovieImage, MovieInfo, MovieTitle} from "@/components";
 import {Metadata} from "next";
-import {rateColorHandler} from "@/utils/rateColorHandler.util";
 
 interface IMoviePageProps {
     params: {
@@ -15,6 +14,13 @@ export async function generateMetadata({params: {id}}: IMoviePageProps): Promise
     return {
         title: `Movie No.${id}`,
     };
+}
+
+//? Handle rate color
+const rateColorHandler = (rate: number) => {
+    if (rate > 6) return "text-green-600"
+    if (rate < 6 && rate > 4.5) return "text-yellow-500"
+    return "text-red-600"
 }
 
 const MovieDetails = async ({params: {id}}: IMoviePageProps): Promise<any> => {

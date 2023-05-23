@@ -5,7 +5,13 @@ import {useParams, useRouter} from "next/navigation";
 import {Dialog} from "@headlessui/react";
 import {getMovieService} from "@/services/getMoviesService";
 import {MovieImage, MovieInfo, MovieTitle} from "@/components";
-import {rateColorHandler} from "@/utils/rateColorHandler.util";
+
+//? Handle rate color
+const rateColorHandler = (rate: number) => {
+    if (rate > 6) return "text-green-600"
+    if (rate < 6 && rate > 4.5) return "text-yellow-500"
+    return "text-red-600"
+}
 
 const Modal = () => {
 

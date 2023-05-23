@@ -4,8 +4,14 @@
 
 | Version            |
 |:-------------------|
+| [`0.2.0`](#v0.2.0) |
 | [`0.1.0`](#v0.1.0) |
 
+
+### <a id="v0.2.0"/>`0.2.0`
+
+- Added the Preview to the [`README.md`](./README.md)
+- Fixed some style issues
 
 ### <a id="v0.1.0"/>`0.1.0`
 

@@ -3,8 +3,8 @@ import {MovieImage, MovieTitle} from "@/components";
 
 const Movie = ({movie: {Poster, Year, imdbID, Type, Title}}: { movie: IMovieList }) => {
     return (
-        <article className="flex h-40 text-white">
-            <div className="relative h-full flex-1">
+        <article className="flex h-52 text-white">
+            <div className="relative h-full flex-1 mr-4">
                 <Link href={`/movie/${imdbID}`}>
                     <MovieImage Title={Title} Poster={Poster} className={`object-contain ${Poster === "N/A" ? "px-2" : ""}`}/>
                 </Link>
