@@ -1,7 +1,7 @@
 import axios from "axios";
 
 //! base url to set the request api url
-axios.defaults.baseURL = `http://www.omdbapi.com`;
+axios.defaults.baseURL = `https://www.omdbapi.com`;
 
 //! request
 axios.interceptors.request.use(
